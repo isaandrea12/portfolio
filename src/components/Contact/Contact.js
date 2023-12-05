@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./Contact.module.css";
-// import ContactForm from "../ContactForm/ContactForm";
+import ContactForm from "../ContactForm/ContactForm";
 import { Link } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 
-const Contact = () => {
+const Contact = ({ isSubmit, sendEmail }) => {
   return (
     <div>
       <div className={styles.titleContainer}>
@@ -17,7 +17,7 @@ const Contact = () => {
           <strong>isabelandreamuniz@gmail.com</strong>
         </p>
       </div>
-      {/* <ContactForm /> */}
+      <ContactForm sendEmail={sendEmail} />
       <div className={styles.ctaProjectsContainer}>
         <Link className={styles.ctaProjects} to="/">
           Go Back Home <FaLongArrowAltRight />
