@@ -17,7 +17,7 @@ const Projects = () => {
         {/* Element Ease */}
         <div class={styles.card}>
           <div class={styles.cardImage}>
-            <img src={weather} alt="Image description" />
+            <img src={weather} alt="Weather App preview" />
           </div>
           <div class={styles.cardOverlay}>
             <div class={styles.cardHeader}>
@@ -50,7 +50,7 @@ const Projects = () => {
         {/* ToDo List */}
         <div class={styles.card}>
           <div class={styles.cardImage}>
-            <img src={todo} alt="Image description" />
+            <img src={todo} alt="ToDo List preview" />
           </div>
           <div class={styles.cardOverlay}>
             <div class={styles.cardHeader}>
@@ -84,7 +84,7 @@ const Projects = () => {
         {/* Calculator */}
         <div class={styles.card}>
           <div class={styles.cardImage}>
-            <img src={calculator} alt="Image description" />
+            <img src={calculator} alt="Calculator App preview" />
           </div>
           <div class={styles.cardOverlay}>
             <div class={styles.cardHeader}>

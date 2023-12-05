@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Contact.module.css";
-import ContactForm from "../ContactForm/ContactForm";
+// import ContactForm from "../ContactForm/ContactForm";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 
