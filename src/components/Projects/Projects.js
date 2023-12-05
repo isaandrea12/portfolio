@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Projects.module.css";
-import { HiOutlineArrowLongRight } from '@heroicons/react/outline';
 import { Link } from "react-router-dom";
 import todo from "../../assets/todo2.png";
 import weather from "../../assets/weather.png";
@@ -118,7 +117,7 @@ const Projects = () => {
 
       <div className={styles.ctaProjectsContainer}>
         <Link className={styles.ctaProjects} to="/">
-          Go Back Home <HiOutlineArrowLongRight />
+          Go Back Home 
         </Link>
       </div>
     </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Home.module.css";
-import { HiOutlineArrowLongRight } from '@heroicons/react/outline';
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -28,7 +27,7 @@ const Home = () => {
       </div>
       <div className={styles.ctaProjectsContainer}>
         <Link className={styles.ctaProjects} to="/projects">
-          See Projects <HiOutlineArrowLongRight />
+          See Projects 
         </Link>
       </div>
     </div>

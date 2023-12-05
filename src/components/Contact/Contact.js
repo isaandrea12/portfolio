@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Contact.module.css";
 // import ContactForm from "../ContactForm/ContactForm";
-import { HiOutlineArrowLongRight } from '@heroicons/react/outline'
 import { Link } from "react-router-dom";
 
 const Contact = () => {
@@ -19,7 +18,7 @@ const Contact = () => {
       {/* <ContactForm /> */}
       <div className={styles.ctaProjectsContainer}>
         <Link className={styles.ctaProjects} to="/">
-          Go Back Home <HiOutlineArrowLongRight />
+          Go Back Home
         </Link>
       </div>
     </div>
