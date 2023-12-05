@@ -28,11 +28,17 @@
   margin-top: 4rem;
 }
 
-.ctaProjects {
+.ctaProjects, .link {
   color: #545454;
   text-decoration: none;
 }
 
-.ctaProjects:hover {
-  text-decoration: underline black;
+.ctaProjects:hover, .link:hover {
+  text-decoration: underline #dc5a5a;
+}
+
+.breakSpace::after {
+  content: '';
+  display: block;
+  margin-top: 1em;
 }

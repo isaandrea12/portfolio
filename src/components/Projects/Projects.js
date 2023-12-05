@@ -2,7 +2,9 @@ import React from "react";
 import styles from "./Projects.module.css";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
-import { Card, CardMedia, CardContent, Typography, Button } from "@mui/material";
+import todo from "../../assets/todo2.png";
+import weather from "../../assets/weather.png";
+import calculator from "../../assets/calculator.png";
 
 const Projects = () => {
   return (
@@ -10,23 +12,110 @@ const Projects = () => {
       <div className={styles.titleContainer}>
         <h1 className={styles.title}>Projects.</h1>
       </div>
+
       <div className={styles.cardContainer}>
-        <Card sx={{ maxWidth: 345 }}>
-          <CardMedia
-            sx={{ height: 140 }}
-            image="/static/images/cards/contemplative-reptile.jpg"
-            title="green iguana"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Lizard
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Project Description
-            </Typography>
-          </CardContent>
-        </Card>
+        {/* Element Ease */}
+        <div class={styles.card}>
+          <div class={styles.cardImage}>
+            <img src={weather} alt="Image description" />
+          </div>
+          <div class={styles.cardOverlay}>
+            <div class={styles.cardHeader}>
+              <h2 class={styles.cardTitle}>Element Ease</h2>
+              <p class={styles.cardSubtitle}>
+                A React app that provides live weather updates, such as
+                temperature and conditions, using data from weather APIs.
+              </p>
+            </div>
+            <div class={styles.cardFooter}>
+              <a
+                href="https://element-ease.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class={styles.tag}
+              >
+                Live
+              </a>
+              <a
+                href="https://github.com/isaandrea12/element-ease"
+                target="_blank"
+                rel="noopener noreferrer"
+                class={styles.tag}
+              >
+                Github
+              </a>
+            </div>
+          </div>
+        </div>
+        {/* ToDo List */}
+        <div class={styles.card}>
+          <div class={styles.cardImage}>
+            <img src={todo} alt="Image description" />
+          </div>
+          <div class={styles.cardOverlay}>
+            <div class={styles.cardHeader}>
+              <h2 class={styles.cardTitle}>ToDo Lyst</h2>
+              <p class={styles.cardSubtitle}>
+                A React Todo List app that helps users manage tasks. It features
+                functionalities for adding, deleting, and marking tasks as
+                complete, with a clean and interactive interface.
+              </p>
+            </div>
+            <div class={styles.cardFooter}>
+              <a
+                href="https://todolyst.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class={styles.tag}
+              >
+                Live
+              </a>
+              <a
+                href="https://github.com/isaandrea12/ToDoList"
+                target="_blank"
+                rel="noopener noreferrer"
+                class={styles.tag}
+              >
+                Github
+              </a>
+            </div>
+          </div>
+        </div>
+        {/* Calculator */}
+        <div class={styles.card}>
+          <div class={styles.cardImage}>
+            <img src={calculator} alt="Image description" />
+          </div>
+          <div class={styles.cardOverlay}>
+            <div class={styles.cardHeader}>
+              <h2 class={styles.cardTitle}>Calculator</h2>
+              <p class={styles.cardSubtitle}>
+                A Calculator app that offers basic arithmetic functions like
+                addition, subtraction, multiplication, and division.
+              </p>
+            </div>
+            <div class={styles.cardFooter}>
+              <a
+                href="https://calculatormate.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class={styles.tag}
+              >
+                Live
+              </a>
+              <a
+                href="https://github.com/isaandrea12/Calculator"
+                target="_blank"
+                rel="noopener noreferrer"
+                class={styles.tag}
+              >
+                Github
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
+
       <div className={styles.ctaProjectsContainer}>
         <Link className={styles.ctaProjects} to="/">
           Go Back Home <HiOutlineArrowLongRight />

@@ -8,12 +8,13 @@
   font-size: 3rem;
   font-weight: 900;
   letter-spacing: 2px;
+  padding-bottom: 30px;
 }
 
 .cardContainer {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 15rem;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 15rem;
 }
 
 .ctaProjectsContainer {
@@ -29,5 +30,105 @@
 }
 
 .ctaProjects:hover {
-  text-decoration: underline black;
+  text-decoration: underline #dc5a5a;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15rem;
+}
+
+.card {
+  position: relative;
+  width: 550px;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cardImage img {
+  width: 100%;
+  display: block;
+}
+
+.cardOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7),
+    transparent
+  ); /* Gradient background */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  opacity: 0;
+  transition:
+    opacity 0.5s ease,
+    background-color 0.5s ease,
+    background 0.5s ease;
+}
+
+.cardFooter {
+  margin-bottom: 20px;
+}
+
+.cardHeader,
+.cardFooter {
+  transition: transform 0.5s ease;
+  transform: translateY(20px);
+}
+
+.cardTitle,
+.cardSubtitle {
+  color: transparent;
+  margin: 0;
+}
+
+.tag {
+  display: inline-block;
+  background-color: gray;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 999px;
+  font-size: 0.75em;
+  opacity: 0;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+  transform: translateY(20px);
+  visibility: hidden;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.card:hover .cardOverlay {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7),
+    transparent
+  ); /* Gradient background on hover */
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.card:hover .cardHeader,
+.card:hover .cardFooter {
+  transform: translateY(0px);
+}
+
+.card:hover .cardTitle,
+.card:hover .cardSubtitle,
+.card:hover .tag {
+  color: #ffffff;
+  opacity: 1;
+  visibility: visible;
 }

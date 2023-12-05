@@ -1,5 +1,3 @@
-/* Navbar.css */
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -11,7 +9,7 @@
 
 .logo {
   font-size: 2rem;
-  font-family: 'Abril Fatface', serif;
+  font-family: "Abril Fatface", serif;
   font-weight: 900;
   color: black;
   margin-left: 1rem;
@@ -33,5 +31,5 @@
 }
 
 .links a:hover {
-  text-decoration: underline black;
+  text-decoration: underline #dc5a5a;
 }

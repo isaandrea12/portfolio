@@ -12,8 +12,8 @@ const Contact = () => {
       </div>
       <div className={styles.paragraphContainer}>
         <p className={styles.paragraph}>
-          Get in touch or shoot me an email directly at
-          isabelandreamuniz@gmail.com
+          Get in touch or shoot me an email directly at{" "}
+          <strong>isabelandreamuniz@gmail.com</strong>
         </p>
       </div>
       {/* <ContactForm /> */}
