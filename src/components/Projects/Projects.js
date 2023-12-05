@@ -54,7 +54,7 @@ const Projects = () => {
           </div>
           <div class={styles.cardOverlay}>
             <div class={styles.cardHeader}>
-              <h2 class={styles.cardTitle}>ToDo Lyst</h2>
+              <h2 class={styles.cardTitle}>ToDo List</h2>
               <p class={styles.cardSubtitle}>
                 A React Todo List app that helps users manage tasks. It features
                 functionalities for adding, deleting, and marking tasks as

@@ -3,13 +3,6 @@
     justify-content: flex-start;
     margin-left: 15rem;
 }
-/* .container {
-    max-width: 500px;
-    margin: auto;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  } */
   
   input[type="text"],
   input[type="email"],
@@ -21,6 +14,7 @@
     border-bottom: 2px solid #eee;
     box-sizing: border-box;
     transition: border-color 0.3s;
+    font-family: Arial, sans-serif;
   }
   
   input[type="text"]:focus,
