@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./Contact.module.css";
 // import ContactForm from "../ContactForm/ContactForm";
 import { Link } from "react-router-dom";
+import { FaLongArrowAltRight } from "react-icons/fa";
+
 
 const Contact = () => {
   return (
@@ -18,7 +20,7 @@ const Contact = () => {
       {/* <ContactForm /> */}
       <div className={styles.ctaProjectsContainer}>
         <Link className={styles.ctaProjects} to="/">
-          Go Back Home
+          Go Back Home <FaLongArrowAltRight />
         </Link>
       </div>
     </div>

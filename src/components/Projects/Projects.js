@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import todo from "../../assets/todo2.png";
 import weather from "../../assets/weather.png";
 import calculator from "../../assets/calculator.png";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Projects = () => {
   return (
@@ -117,7 +118,7 @@ const Projects = () => {
 
       <div className={styles.ctaProjectsContainer}>
         <Link className={styles.ctaProjects} to="/">
-          Go Back Home 
+          Go Back Home <FaLongArrowAltRight />
         </Link>
       </div>
     </div>

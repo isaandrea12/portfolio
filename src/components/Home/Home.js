@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Home.module.css";
 import { Link } from "react-router-dom";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -27,7 +28,7 @@ const Home = () => {
       </div>
       <div className={styles.ctaProjectsContainer}>
         <Link className={styles.ctaProjects} to="/projects">
-          See Projects 
+          See Projects <FaLongArrowAltRight />
         </Link>
       </div>
     </div>
