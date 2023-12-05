@@ -1,0 +1,37 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 10rem 2.5rem 10rem;
+  background-color: rgba(255, 253, 252, 255);
+  color: gray;
+}
+
+.logo {
+  font-size: 2rem;
+  font-family: 'Abril Fatface', serif;
+  font-weight: 900;
+  color: black;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+}
+
+.projectsMargin {
+  margin-right: 3rem;
+}
+
+.links a {
+  margin-left: 1rem;
+  color: gray;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline black;
+}

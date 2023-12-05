@@ -1,0 +1,13 @@
+.iconsContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 15rem;
+  margin-top: 2.5rem;
+  font-size: 1.3em;
+}
+
+.linkedinIcon,
+.githubIcon {
+  margin-right: 2rem;
+  color: #545454;
+}

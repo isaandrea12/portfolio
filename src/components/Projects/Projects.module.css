@@ -1,0 +1,33 @@
+.titleContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 15rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 15rem;
+}
+
+.ctaProjectsContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 15rem;
+  margin-top: 4rem;
+}
+
+.ctaProjects {
+  color: #545454;
+  text-decoration: none;
+}
+
+.ctaProjects:hover {
+  text-decoration: underline black;
+}

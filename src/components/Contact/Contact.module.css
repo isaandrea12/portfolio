@@ -1,0 +1,38 @@
+.titleContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 15rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.paragraphContainer {
+  margin-left: 15rem;
+}
+
+.paragraph {
+  max-width: 75%;
+  color: #545454;
+  text-align: left;
+  line-height: 2;
+}
+
+.ctaProjectsContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 15rem;
+  margin-top: 4rem;
+}
+
+.ctaProjects {
+  color: #545454;
+  text-decoration: none;
+}
+
+.ctaProjects:hover {
+  text-decoration: underline black;
+}
