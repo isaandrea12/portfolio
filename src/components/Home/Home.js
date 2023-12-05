@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Home.module.css";
-import { HiOutlineArrowLongRight } from "react-icons/hi2";
+import { HiOutlineArrowLongRight } from '@heroicons/react/outline';
 import { Link } from "react-router-dom";
 
 const Home = () => {
