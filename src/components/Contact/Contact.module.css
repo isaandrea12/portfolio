@@ -1,10 +1,10 @@
 .main {
+  margin-left: 15rem;
 }
 
 .titleContainer {
   display: flex;
   justify-content: flex-start;
-  margin-left: 15rem;
 }
 
 .title {
@@ -14,7 +14,6 @@
 }
 
 .paragraphContainer {
-  margin-left: 15rem;
 }
 
 .paragraph {
@@ -27,7 +26,6 @@
 .ctaProjectsContainer {
   display: flex;
   justify-content: flex-start;
-  margin-left: 15rem;
   margin-top: 4rem;
 }
 
