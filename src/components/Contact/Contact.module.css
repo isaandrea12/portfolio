@@ -75,6 +75,7 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .main {
-    width: 1170px; /* fixed width or percentage as per design */
+    max-width: 1170px; /* fixed width or percentage as per design */
+    margin: auto;
   }
 }
