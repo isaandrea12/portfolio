@@ -24,7 +24,7 @@ const Navbar = () => {
         </Link>
         <Link to="/contact">Contact</Link>
       </div>
-      <div class={styles.menuToggle} onClick={handleNavToggle}>
+      <div className={styles.menuToggle} onClick={handleNavToggle}>
         {isNavToggle ? <FaX /> : <FaBarsStaggered />}
       </div>
       <Transition
