@@ -28,17 +28,19 @@
   margin-top: 4rem;
 }
 
-.ctaProjects, .link {
+.ctaProjects,
+.link {
   color: #545454;
   text-decoration: none;
 }
 
-.ctaProjects:hover, .link:hover {
+.ctaProjects:hover,
+.link:hover {
   text-decoration: underline #dc5a5a;
 }
 
 .breakSpace::after {
-  content: '';
+  content: "";
   display: block;
   margin-top: 1em;
 }
@@ -57,4 +59,41 @@
   border-radius: 4px;
 }
 
+/* Small devices (phones, 768px and smaller) */
+@media (max-width: 768px) {
+  .titleContainer {
+    width: 550px; /* fixed width or percentage as per design */
+    margin-left: 4rem;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .paragraphContainer {
+    margin-left: 4rem;
+  }
+  .ctaProjectsContainer {
+    margin-left: 4rem;
+    margin-top: 4rem;
+  }
+}
 
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .titleContainer {
+    width: 750px; /* fixed width or percentage as per design */
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .titleContainer {
+    width: 970px; /* fixed width or percentage as per design */
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .titleContainer {
+    width: 1170px; /* fixed width or percentage as per design */
+  }
+}

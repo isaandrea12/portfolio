@@ -33,3 +33,39 @@
 .links a:hover {
   text-decoration: underline #dc5a5a;
 }
+
+.menuToggle {
+  display: flex;
+  justify-content: flex-end;
+} 
+
+/* @media (max-width: 768px) {
+  .navbar {
+    padding: 2.5rem 4rem 2.5rem 4rem;
+    width: 100%;
+  }
+  .logo {
+    margin-left: 0rem;
+  }
+  .links {
+    justify-content: flex-end;
+  }
+}
+
+/* @media (min-width: 768px) {
+  .titleContainer {
+    width: 750px; 
+  }
+}
+
+@media (min-width: 992px) {
+  .titleContainer {
+    width: 970px; 
+  }
+}
+
+@media (min-width: 1200px) {
+  .titleContainer {
+    width: 1170px; 
+  }
+} */

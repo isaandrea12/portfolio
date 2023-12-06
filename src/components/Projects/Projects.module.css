@@ -132,3 +132,43 @@
   opacity: 1;
   visibility: visible;
 }
+
+/* Small devices (phones, 768px and smaller) */
+@media (max-width: 768px) {
+  .titleContainer {
+    width: 550px; /* fixed width or percentage as per design */
+    margin-left: 4rem;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .ctaProjectsContainer {
+    margin-left: 4rem;
+    margin-top: 4rem;
+  }
+  .cardContainer {
+    margin-left: 4rem;
+  }
+  /* FIX CARD */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .titleContainer {
+    width: 750px; /* fixed width or percentage as per design */
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .titleContainer {
+    width: 970px; /* fixed width or percentage as per design */
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .titleContainer {
+    width: 1170px; /* fixed width or percentage as per design */
+  }
+}

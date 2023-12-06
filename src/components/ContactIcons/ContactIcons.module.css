@@ -12,3 +12,11 @@
   margin-right: 2rem;
   color: #545454;
 }
+
+/* Small devices (phones, 768px and smaller) */
+@media (max-width: 768px) {
+  .iconsContainer {
+    width: 550px; /* fixed width or percentage as per design */
+    margin-left: 4rem;
+  }
+}
