@@ -2,7 +2,7 @@ import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import { FaBarsStaggered, FaX } from "react-icons/fa6";
-import { Transition } from 'react-transition-group';
+import { CSSTransition } from 'react-transition-group';
 
 const Navbar = () => {
   const [isNavToggle, setIsNavToggle] = useState(false);
@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className={styles.menuToggle} onClick={handleNavToggle}>
         {isNavToggle ? <FaX /> : <FaBarsStaggered />}
       </div>
-      <Transition
+      <CSSTransition
           in={isNavToggle}
           unmountOnExit
           timeout={500}
@@ -79,7 +79,7 @@ const Navbar = () => {
             </Link>
           </ol>
           {/* )} */}
-        </Transition>
+        </CSSTransition>
       {/* <ul class={styles.menu}>
         <li>
           <a href="#">Projects</a>
