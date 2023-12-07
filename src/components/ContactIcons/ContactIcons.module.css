@@ -1,9 +1,6 @@
 .iconsContainer {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 15rem;
   margin-top: 2.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem !important;
   font-size: 1.3em;
 }
 
@@ -16,7 +13,31 @@
 /* Small devices (phones, 768px and smaller) */
 @media (max-width: 768px) {
   .iconsContainer {
-    width: 550px; /* fixed width or percentage as per design */
-    margin-left: 4rem;
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .iconsContainer {
+    max-width: 80%; /* fixed width or percentage as per design */
+    margin: auto;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .iconsContainer {
+    max-width: 970px; /* fixed width or percentage as per design */
+    margin: auto;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 2000px) {
+  .iconsContainer {
+    max-width: 1200px; /* fixed width or percentage as per design */
+    margin: auto;
   }
 }

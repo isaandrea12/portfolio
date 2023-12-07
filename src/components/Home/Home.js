@@ -5,7 +5,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <div>
+    <div className={styles.main}>
       <div className={styles.titleContainer}>
         <h1 className={styles.title}>I'm Isabel Muniz</h1>
       </div>

@@ -1,13 +1,11 @@
-.container {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 15rem;
+.main {
+  /* width: 60%; */
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%;
+  width: 60%;
   padding: 15px;
   margin-bottom: 20px;
   border: none;
@@ -25,13 +23,14 @@ textarea:focus {
 }
 
 button[type="submit"] {
-  width: 100%;
+  max-width: 30%;
+  margin: auto;
   padding: 15px;
   border: none;
   background: black;
   border-radius: 5px;
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -42,29 +41,32 @@ button[type="submit"]:hover {
 
 /* Small devices (phones, 768px and smaller) */
 @media (max-width: 768px) {
-  .container {
-    width: 550px; /* fixed width or percentage as per design */
-    margin-left: 4rem;
+  .main {
+    max-width: 80%; 
+    margin: auto;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .container {
-    width: 750px; /* fixed width or percentage as per design */
+  .main {
+    max-width: 80%; 
+    margin: auto;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .container {
-    width: 970px; /* fixed width or percentage as per design */
+  .main {
+    max-width: 970px; 
+    margin: auto;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px; /* fixed width or percentage as per design */
+@media (min-width: 2000px) {
+  .main {
+    max-width: 1200px; 
+    margin: auto;
   }
 }

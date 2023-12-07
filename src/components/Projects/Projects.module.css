@@ -1,7 +1,6 @@
 .titleContainer {
   display: flex;
   justify-content: flex-start;
-  margin-left: 15rem;
 }
 
 .title {
@@ -20,8 +19,8 @@
 .ctaProjectsContainer {
   display: flex;
   justify-content: flex-start;
-  margin-left: 15rem;
   margin-top: 4rem;
+  margin-bottom: 3rem;
 }
 
 .ctaProjects {
@@ -37,7 +36,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 15rem;
 }
 
 .card {
@@ -135,40 +133,35 @@
 
 /* Small devices (phones, 768px and smaller) */
 @media (max-width: 768px) {
-  .titleContainer {
-    width: 550px; /* fixed width or percentage as per design */
-    margin-left: 4rem;
+  .main {
+    max-width: 70%; 
+    margin: auto;
   }
   .title {
     font-size: 2.5rem;
   }
-  .ctaProjectsContainer {
-    margin-left: 4rem;
-    margin-top: 4rem;
-  }
-  .cardContainer {
-    margin-left: 4rem;
-  }
-  /* FIX CARD */
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .titleContainer {
-    width: 750px; /* fixed width or percentage as per design */
+  .main {
+    max-width: 80%;
+    margin: auto;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .titleContainer {
-    width: 970px; /* fixed width or percentage as per design */
+  .main {
+    max-width: 970px; 
+    margin: auto;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .titleContainer {
-    width: 1170px; /* fixed width or percentage as per design */
+@media (min-width: 2000px) {
+  .titleConmaintainer {
+    max-width: 1200px;
+    margin: auto;
   }
 }

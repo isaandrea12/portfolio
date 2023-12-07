@@ -1,10 +1,6 @@
-.main {
-  margin-left: 15rem;
-}
-
 .titleContainer {
-  display: flex;
-  justify-content: flex-start;
+  /* display: flex;
+  justify-content: flex-start; */
 }
 
 .title {
@@ -17,16 +13,17 @@
 }
 
 .paragraph {
-  max-width: 75%;
+  /* max-width: 75%; */
   color: #545454;
   text-align: left;
   line-height: 2;
 }
 
 .ctaProjectsContainer {
-  display: flex;
-  justify-content: flex-start;
+  /* display: flex;
+  justify-content: flex-start; */
   margin-top: 4rem;
+  margin-bottom: 3rem;
 }
 
 .ctaProjects {
@@ -41,25 +38,18 @@
 /* Small devices (phones, 768px and smaller) */
 @media (max-width: 768px) {
   .main {
-    max-width: 550px; /* fixed width or percentage as per design */
+    max-width: 80%; /* fixed width or percentage as per design */
     margin: auto;
   }
   .title {
     font-size: 2.5rem;
-  }
-  .paragraphContainer {
-    margin-left: 4rem;
-  }
-  .ctaProjectsContainer {
-    margin-left: 4rem;
-    margin-top: 4rem;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .main {
-    max-width: 750px; /* fixed width or percentage as per design */
+    max-width: 80%; /* fixed width or percentage as per design */
     margin: auto;
   }
 }
@@ -75,7 +65,7 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 2000px) {
   .main {
-    max-width: 1170px; /* fixed width or percentage as per design */
-    margin: auto;
+    max-width: 1200px; /* fixed width or percentage as per design */
+    margin: 0 auto;
   }
 }

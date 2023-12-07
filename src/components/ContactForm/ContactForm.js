@@ -16,20 +16,8 @@ const ContactForm = ({ sendEmail }) => {
     });
   };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   // Add your form submission logic here
-  //   console.log("Form submitted:", formData);
-  //   // Reset the form after submission
-  //   setFormData({
-  //     name: "",
-  //     email: "",
-  //     message: "",
-  //   });
-  // };
-
   return (
-    <div className={styles.container}>
+    <div className={styles.main}>
       <form onSubmit={sendEmail}>
         <div>
           <input

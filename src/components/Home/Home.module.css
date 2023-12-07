@@ -1,7 +1,6 @@
 .titleContainer {
   display: flex;
   justify-content: flex-start;
-  margin-left: 15rem;
 }
 
 .title {
@@ -10,12 +9,7 @@
   letter-spacing: 2px;
 }
 
-.paragraphContainer {
-  margin-left: 15rem;
-}
-
 .paragraph {
-  max-width: 75%;
   color: #545454;
   text-align: left;
   line-height: 2;
@@ -24,8 +18,8 @@
 .ctaProjectsContainer {
   display: flex;
   justify-content: flex-start;
-  margin-left: 15rem;
   margin-top: 4rem;
+  margin-bottom: 3rem;
 }
 
 .ctaProjects,
@@ -61,39 +55,35 @@
 
 /* Small devices (phones, 768px and smaller) */
 @media (max-width: 768px) {
-  .titleContainer {
-    width: 550px; /* fixed width or percentage as per design */
-    margin-left: 4rem;
+  .main {
+    max-width: 80%;
+    margin: auto;
   }
   .title {
     font-size: 2.5rem;
-  }
-  .paragraphContainer {
-    margin-left: 4rem;
-  }
-  .ctaProjectsContainer {
-    margin-left: 4rem;
-    margin-top: 4rem;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .titleContainer {
-    width: 750px; /* fixed width or percentage as per design */
+  .main {
+    max-width: 80%;
+    margin: auto;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .titleContainer {
-    width: 970px; /* fixed width or percentage as per design */
+  .main {
+    max-width: 970px; 
+    margin: auto;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .titleContainer {
-    width: 1170px; /* fixed width or percentage as per design */
+@media (min-width: 2000px) {
+  .main {
+    max-width: 1200px; 
+    margin: auto;
   }
 }
