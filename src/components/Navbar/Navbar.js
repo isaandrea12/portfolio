@@ -14,58 +14,60 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={styles.navbar}>
-      <Link className={styles.logo} to="/">
-        IM.
-      </Link>
-      <div className={styles.links}>
-        <Link className={styles.projectsMargin} to="/projects">
-          Projects
+    <div className={styles.main}>
+      <nav className={styles.navbar}>
+        <Link className={styles.logo} to="/">
+          IM.
         </Link>
-        <Link to="/contact">Contact</Link>
-      </div>
-      <div className={styles.menuToggle} onClick={handleNavToggle}>
-        {isNavToggle ? <FaX /> : <FaBarsStaggered />}
-      </div>
-      <CSSTransition
-          in={isNavToggle}
-          unmountOnExit
-          timeout={500}
-          classNames='display'
-        >
-          <ul>
-            <li>
-              <Link
-                onClick={handleNavToggle}
-                className={styles.menuLink}
-                to='projects'
-                activeClass='active'
-                spy={true}
-                smooth={true}
-                offset={-40}
-                duration={500}
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                onClick={handleNavToggle}
-                className={styles.menuLink}
-                to='contact'
-                activeClass='active'
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={500}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-          {/* )} */}
-        </CSSTransition>
-    </nav>
+        <div className={styles.links}>
+          <Link className={styles.projectsMargin} to="/projects">
+            Projects
+          </Link>
+          <Link to="/contact">Contact</Link>
+        </div>
+        <div className={styles.menuToggle} onClick={handleNavToggle}>
+          {isNavToggle ? <FaX /> : <FaBarsStaggered />}
+        </div>
+        <CSSTransition
+            in={isNavToggle}
+            unmountOnExit
+            timeout={500}
+            classNames='display'
+          >
+            <ul>
+              <li>
+                <Link
+                  onClick={handleNavToggle}
+                  className={styles.menuLink}
+                  to='projects'
+                  activeClass='active'
+                  spy={true}
+                  smooth={true}
+                  offset={-40}
+                  duration={500}
+                >
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  onClick={handleNavToggle}
+                  className={styles.menuLink}
+                  to='contact'
+                  activeClass='active'
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={500}
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+            {/* )} */}
+          </CSSTransition>
+      </nav>
+    </div>
   );
 };
 
