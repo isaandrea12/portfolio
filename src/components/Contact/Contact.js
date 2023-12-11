@@ -7,9 +7,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 const Contact = ({ isSubmit, sendEmail }) => {
   return (
     <div className={styles.main}>
-      <div className={styles.titleContainer}>
         <h1 className={styles.title}>Contact.</h1>
-      </div>
       <div className={styles.paragraphContainer}>
         <p className={styles.paragraph}>
           Get in touch or shoot me an email directly at{" "}

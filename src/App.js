@@ -8,6 +8,7 @@ import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import ContactIcons from "./components/ContactIcons/ContactIcons";
 import emailjs from "emailjs-com";
+import { Snackbar, Alert } from "@mui/material";
 
 function App() {
   const [isSubmit, setIsSubmit] = useState(false);
@@ -16,6 +17,7 @@ function App() {
     email: "",
     message: "",
   });
+  const [openSnackbar, setOpenSnackbar] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -26,7 +28,7 @@ function App() {
       name: "",
       email: "",
       message: "",
-    });
+    })
 
     emailjs
       .sendForm(
@@ -38,6 +40,7 @@ function App() {
       .then(
         (result) => {
           console.log(result.text);
+          setOpenSnackbar(true);
         },
         (error) => {
           console.log(error.text);
@@ -48,6 +51,13 @@ function App() {
     setTimeout(() => {
       setIsSubmit(false);
     }, 5000);
+  };
+
+  const handleCloseSnackbar = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+    setOpenSnackbar(false);
   };
 
   return (
@@ -77,6 +87,11 @@ function App() {
           />
         </Routes>
         <ContactIcons />
+        <Snackbar open={openSnackbar} autoHideDuration={6000} onClose={handleCloseSnackbar}>
+          <Alert onClose={handleCloseSnackbar} severity="success" sx={{ width: '100%' }}>
+            Message sent successfully!
+          </Alert>
+        </Snackbar>
       </div>
     </Router>
   );

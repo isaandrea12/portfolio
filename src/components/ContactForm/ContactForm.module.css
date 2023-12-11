@@ -23,9 +23,9 @@ textarea:focus {
 }
 
 button[type="submit"] {
-  max-width: 30%;
+  max-width: 80%;
   margin: auto;
-  padding: 15px;
+  padding: 1rem;
   border: none;
   background: black;
   border-radius: 5px;

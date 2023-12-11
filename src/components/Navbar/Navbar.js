@@ -33,61 +33,38 @@ const Navbar = () => {
           timeout={500}
           classNames='display'
         >
-          {/* {isNavToggle && ( */}
-          <ol
-            style={
-              {
-                // display: isNavToggle ? null : 'none',
-              }
-            }
-          >
-            <Link
-              onClick={handleNavToggle}
-              className='li'
-              to='home'
-              activeClass='active'
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={500}
-            >
-              Home
-            </Link>
-            <Link
-              onClick={handleNavToggle}
-              className='li'
-              to='projects'
-              activeClass='active'
-              spy={true}
-              smooth={true}
-              offset={-40}
-              duration={500}
-            >
-              Projects
-            </Link>
-            <Link
-              onClick={handleNavToggle}
-              className='li'
-              to='contact'
-              activeClass='active'
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={500}
-            >
-              Contact
-            </Link>
-          </ol>
+          <ul>
+            <li>
+              <Link
+                onClick={handleNavToggle}
+                className={styles.menuLink}
+                to='projects'
+                activeClass='active'
+                spy={true}
+                smooth={true}
+                offset={-40}
+                duration={500}
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={handleNavToggle}
+                className={styles.menuLink}
+                to='contact'
+                activeClass='active'
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
           {/* )} */}
         </CSSTransition>
-      {/* <ul class={styles.menu}>
-        <li>
-          <a href="#">Projects</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul> */}
     </nav>
   );
 };

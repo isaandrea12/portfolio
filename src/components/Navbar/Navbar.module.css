@@ -20,6 +20,15 @@
   display: flex;
 }
 
+ul {
+  list-style: none;
+}
+
+.menuLink {
+  text-decoration: none;
+  color: gray;
+}
+
 .projectsMargin {
   margin-right: 3rem;
 }
@@ -35,12 +44,20 @@
 }
 
 .menuToggle {
-  display: flex;
-  justify-content: flex-end;
+  display: none; /* Hide the menuToggle by default */
 } 
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .navbar {
+    padding: auto;
+  }
+  .menuToggle {
+    display: block;
+  }
+  .links {
+    display: none; 
+  }
+  /* .navbar {
     padding: 2.5rem 4rem 2.5rem 4rem;
     width: 100%;
   }
@@ -49,7 +66,7 @@
   }
   .links {
     justify-content: flex-end;
-  }
+  } */
 }
 
 /* @media (min-width: 768px) {
