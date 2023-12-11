@@ -4,9 +4,9 @@ import styles from "./Navbar.module.css";
 import { FaBarsStaggered, FaX } from "react-icons/fa6";
 import { CSSTransition } from "react-transition-group";
 
-const Navbar = () => {
-  const [isNavToggle, setIsNavToggle] = useState(false);
-  
+const Navbar = ({ isNavToggle, setIsNavToggle }) => {
+  // const [isNavToggle, setIsNavToggle] = useState(false);
+
   const handleNavToggle = () => {
     setIsNavToggle((prev) => {
       return !prev;
@@ -28,44 +28,64 @@ const Navbar = () => {
         <div className={styles.menuToggle} onClick={handleNavToggle}>
           {isNavToggle ? <FaX /> : <FaBarsStaggered />}
         </div>
-        <CSSTransition
+        <div
+          className={`${styles.menuContent} ${
+            isNavToggle ? styles.open : styles.closed
+          }`}
+        >
+          <CSSTransition
             in={isNavToggle}
             unmountOnExit
             timeout={500}
-            classNames='display'
+            classNames="display"
           >
-            <ul>
-              <li>
+            <ul className={styles.toggledMenuLinks}>
+              <li className={styles.menuLinkMargin}>
                 <Link
                   onClick={handleNavToggle}
                   className={styles.menuLink}
-                  to='projects'
-                  activeClass='active'
+                  to="/"
+                  activeClass="active"
                   spy={true}
                   smooth={true}
                   offset={-40}
                   duration={500}
                 >
-                  Projects
+                  HOME
                 </Link>
               </li>
-              <li>
+              <li className={styles.menuLinkMargin}>
                 <Link
                   onClick={handleNavToggle}
                   className={styles.menuLink}
-                  to='contact'
-                  activeClass='active'
+                  to="projects"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-40}
+                  duration={500}
+                >
+                  PROJECTS
+                </Link>
+              </li>
+              <li className={styles.menuLinkMargin}>
+                <Link
+                  onClick={handleNavToggle}
+                  className={styles.menuLink}
+                  to="contact"
+                  activeClass="active"
                   spy={true}
                   smooth={true}
                   offset={-50}
                   duration={500}
                 >
-                  Contact
+                  CONTACT
                 </Link>
               </li>
             </ul>
             {/* )} */}
           </CSSTransition>
+        </div>
       </nav>
     </div>
   );

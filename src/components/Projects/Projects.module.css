@@ -10,11 +10,11 @@
   padding-bottom: 30px;
 }
 
-.cardContainer {
+/* .cardContainer {
   display: flex;
   justify-content: flex-start;
   margin: 0 !important;
-}
+} */
 
 .ctaProjectsContainer {
   display: flex;
@@ -134,7 +134,7 @@
 /* Small devices (phones, 768px and smaller) */
 @media (max-width: 768px) {
   .main {
-    max-width: 70%; 
+    max-width: 70%;
     margin: auto;
   }
   .title {
@@ -153,7 +153,7 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .main {
-    max-width: 970px; 
+    max-width: 970px;
     margin: auto;
   }
 }

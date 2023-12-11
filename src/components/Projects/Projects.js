@@ -6,13 +6,16 @@ import weather from "../../assets/weather.png";
 import calculator from "../../assets/calculator.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
-const Projects = () => {
+const Projects = ({ isNavToggle }) => {
   return (
     <div className={styles.main}>
       <div className={styles.titleContainer}>
         <h1 className={styles.title}>Projects.</h1>
       </div>
-      <div className={styles.cardContainer}>
+      <div
+        className={styles.cardContainer}
+        style={isNavToggle ? { display: "none" } : null}
+      >
         {/* Element Ease */}
         <div class={styles.card}>
           <div class={styles.cardImage}>

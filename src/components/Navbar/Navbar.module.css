@@ -7,6 +7,10 @@
   color: gray;
 }
 
+.menuContent {
+  display: none;
+}
+
 .logo {
   font-size: 2rem;
   font-family: "Abril Fatface", serif;
@@ -26,6 +30,7 @@ ul {
 .menuLink {
   text-decoration: none;
   color: gray;
+  font-weight: 700;
 }
 
 .projectsMargin {
@@ -42,8 +47,8 @@ ul {
 }
 
 .menuToggle {
-  display: none; /* Hide the menuToggle by default */
-} 
+  display: none;
+}
 
 @media (max-width: 768px) {
   .main {
@@ -53,31 +58,57 @@ ul {
   .navbar {
     padding: 1.5rem 1rem;
   }
+  .navbar .menuContent.closed {
+    display: none;
+  }
+  .navbar .menuContent.open {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    top: 0;
+    left: 0;
+    background-color: white; /* or any color you want */
+    text-align: left;
+  }
   .menuToggle {
     display: block;
+    z-index: 100000;
   }
   .links {
-    display: none; 
+    display: none;
+  }
+  .toggledMenuLinks {
+    padding: 0;
+    margin: 6rem auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .menuLinkMargin {
+    margin: 1rem;
   }
 }
 
 @media (min-width: 768px) {
   .titleContainer {
-    max-width: 80%; 
+    max-width: 80%;
     margin: auto;
   }
 }
 
 @media (min-width: 992px) {
   .titleContainer {
-    max-width: 970px; 
+    max-width: 970px;
     margin: auto;
   }
 }
 
 @media (min-width: 2000px) {
   .titleContainer {
-    max-width: 1200px; 
+    max-width: 1200px;
     margin: auto;
   }
 }

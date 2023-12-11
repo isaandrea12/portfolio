@@ -75,7 +75,7 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .main {
-    max-width: 970px; 
+    max-width: 970px;
     margin: auto;
   }
 }
@@ -83,7 +83,7 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 2000px) {
   .main {
-    max-width: 1200px; 
+    max-width: 1200px;
     margin: auto;
   }
 }

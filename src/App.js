@@ -11,6 +11,7 @@ import emailjs from "emailjs-com";
 import { Snackbar, Alert } from "@mui/material";
 
 function App() {
+  const [isNavToggle, setIsNavToggle] = useState(false);
   const [isSubmit, setIsSubmit] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -28,7 +29,7 @@ function App() {
       name: "",
       email: "",
       message: "",
-    })
+    });
 
     emailjs
       .sendForm(
@@ -54,7 +55,7 @@ function App() {
   };
 
   const handleCloseSnackbar = (event, reason) => {
-    if (reason === 'clickaway') {
+    if (reason === "clickaway") {
       return;
     }
     setOpenSnackbar(false);
@@ -77,18 +78,29 @@ function App() {
             ".link",
           ]}
         />
-        <Navbar />
+        <Navbar isNavToggle={isNavToggle} setIsNavToggle={setIsNavToggle} />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route
+            path="/projects"
+            element={<Projects isNavToggle={isNavToggle} />}
+          />
           <Route
             path="/contact"
             element={<Contact isSubmit={isSubmit} sendEmail={sendEmail} />}
           />
         </Routes>
         <ContactIcons />
-        <Snackbar open={openSnackbar} autoHideDuration={6000} onClose={handleCloseSnackbar}>
-          <Alert onClose={handleCloseSnackbar} severity="success" sx={{ width: '100%' }}>
+        <Snackbar
+          open={openSnackbar}
+          autoHideDuration={6000}
+          onClose={handleCloseSnackbar}
+        >
+          <Alert
+            onClose={handleCloseSnackbar}
+            severity="success"
+            sx={{ width: "100%" }}
+          >
             Message sent successfully!
           </Alert>
         </Snackbar>
