@@ -29,8 +29,22 @@ ul {
 
 .menuLink {
   text-decoration: none;
-  color: gray;
+  color: #333333;
   font-weight: 700;
+  font-size: larger;
+}
+
+.menuLink:hover {
+  text-decoration: none;
+  color: red;
+  font-weight: 700;
+  font-size: larger;
+}
+.menuLink:active {
+  text-decoration: none;
+  color: blue;
+  font-weight: 700;
+  font-size: larger;
 }
 
 .projectsMargin {
@@ -88,7 +102,10 @@ ul {
     width: 100%;
   }
   .menuLinkMargin {
-    margin: 1rem;
+    margin: 1.5rem;
+  }
+  .faIcon {
+    color: #333333;
   }
 }
 

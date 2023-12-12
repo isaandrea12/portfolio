@@ -26,7 +26,7 @@ const Navbar = ({ isNavToggle, setIsNavToggle }) => {
           <Link to="/contact">Contact</Link>
         </div>
         <div className={styles.menuToggle} onClick={handleNavToggle}>
-          {isNavToggle ? <FaX /> : <FaBarsStaggered />}
+          {isNavToggle ? <FaX className={styles.faIcon} size="1.5em" /> : <FaBarsStaggered className={styles.faIcon} size="1.5em" />}
         </div>
         <div
           className={`${styles.menuContent} ${
