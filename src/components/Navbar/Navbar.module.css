@@ -34,19 +34,6 @@ ul {
   font-size: larger;
 }
 
-.menuLink:hover {
-  text-decoration: none;
-  color: red;
-  font-weight: 700;
-  font-size: larger;
-}
-.menuLink:active {
-  text-decoration: none;
-  color: blue;
-  font-weight: 700;
-  font-size: larger;
-}
-
 .projectsMargin {
   margin-right: 3rem;
 }

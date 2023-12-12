@@ -11,8 +11,8 @@ const Home = () => {
       </div>
       <div className={styles.paragraphContainer}>
         <p className={styles.paragraph}>
-          Fresh out of the college compiler and debugged for the real world, I'm
-          a newly minted Software Engineer with a special interest in{" "}
+          Fresh out of the college compiler and debugged for the real world. I'm
+          a Software Engineer with a special interest in{" "}
           <button className={styles.codeBlock}>Frontend Engineering</button> and{" "}
           <button className={styles.codeBlock}>UX Design</button>. <br />{" "}
           <span className={styles.breakSpace}></span>
@@ -24,9 +24,9 @@ const Home = () => {
           appreciation for the significance of user-centered design in software
           engineering. <br /> <span className={styles.breakSpace}></span>
           As I step into the professional world, I bring with me a blend of
-          technical know-how and a keen eye for design. I'm excited about the
-          opportunities to contribute to impactful projects, continue learning,
-          and grow as a software engineer. Feel free to{" "}
+          technical know-how and a keen eye for design. I'm looking forward to
+          contribuiting to impactful projects, expanding my knowledge base, and
+          growing as a software engineer. Feel free to{" "}
           <Link className={styles.link} to="/contact">
             <strong>CONTACT</strong>
           </Link>{" "}
