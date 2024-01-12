@@ -25,7 +25,7 @@ const Home = () => {
           engineering. <br /> <span className={styles.breakSpace}></span>
           As I step into the professional world, I bring with me a blend of
           technical know-how and a keen eye for design. I'm looking forward to
-          contribuiting to impactful projects, expanding my knowledge base, and
+          contributing to impactful projects, expanding my knowledge base, and
           growing as a software engineer. Feel free to{" "}
           <Link className={styles.link} to="/contact">
             <strong>CONTACT</strong>
