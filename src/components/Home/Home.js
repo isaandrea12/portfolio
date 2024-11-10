@@ -11,22 +11,26 @@ const Home = () => {
       </div>
       <div className={styles.paragraphContainer}>
         <p className={styles.paragraph}>
-          Fresh out of the college compiler and debugged for the real world. I'm
-          a Software Engineer with a special interest in{" "}
-          <button className={styles.codeBlock}>Frontend Engineering</button> and{" "}
-          <button className={styles.codeBlock}>UX Design</button>. <br />{" "}
+          Software Engineer with an interest in {" "}
+          <button className={styles.codeBlock}>Frontend Engineering</button> and {" "}
+          <button className={styles.codeBlock}>UX Design</button>, currently building text-to-speech and voice morphing technologies at Transperfect.
           <span className={styles.breakSpace}></span>
-          I've developed multiple{" "}
+          I combine technical precision with user-centered design principles to create robust, intuitive applications. My work spans full-stack development, 
+          from crafting responsive interfaces with
+          <button className={styles.codeBlock}>Next.js</button> and {""}
+          <button className={styles.codeBlock}>React</button>
+          to implementing backend solutions in 
+          <button className={styles.codeBlock}>Python</button> and {""}
+          <button className={styles.codeBlock}>Java</button>.
+          <span className={styles.breakSpace}></span>
+          Through my{" "}
           <Link className={styles.link} to="/projects">
             <strong>PROJECTS</strong>
           </Link>{" "}
-          that have not only sharpened my technical skills but also deepened my
-          appreciation for the significance of user-centered design in software
-          engineering. <br /> <span className={styles.breakSpace}></span>
-          As I step into the professional world, I bring with me a blend of
-          technical know-how and a keen eye for design. I'm looking forward to
-          contribuiting to impactful projects, expanding my knowledge base, and
-          growing as a software engineer. Feel free to{" "}
+          , I've demonstrated my ability to deliver complex features while maintaining a focus on exceptional user experience. 
+          I'm passionate about creating innovative solutions and continuously expanding my technical expertise.  
+          <br /> <span className={styles.breakSpace}></span>
+          Feel free to{" "}
           <Link className={styles.link} to="/contact">
             <strong>CONTACT</strong>
           </Link>{" "}
